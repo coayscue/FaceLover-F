@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D72i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FaceLover" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1m-8K-k1x">
+                                <rect key="frame" x="136" y="20" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8Y-ds-obp">
+                                <rect key="frame" x="77" y="530" width="166" height="30"/>
+                                <state key="normal" title="Click me once logged in">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="A7q-ZF-bv7"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a8g-1Q-Fqp">
+                                <rect key="frame" x="0.0" y="49" width="320" height="473"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="V1m-8K-k1x" secondAttribute="centerX" id="HoI-G8-3Z5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f8Y-ds-obp" secondAttribute="bottom" constant="8" id="PAV-c0-NdP"/>
+                            <constraint firstItem="a8g-1Q-Fqp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VDk-yB-m23"/>
+                            <constraint firstAttribute="trailing" secondItem="a8g-1Q-Fqp" secondAttribute="trailing" id="j5A-dk-bQT"/>
+                            <constraint firstItem="a8g-1Q-Fqp" firstAttribute="top" secondItem="V1m-8K-k1x" secondAttribute="bottom" constant="8" id="mzd-jp-4sU"/>
+                            <constraint firstItem="f8Y-ds-obp" firstAttribute="top" secondItem="a8g-1Q-Fqp" secondAttribute="bottom" constant="8" id="p5N-pP-8eA"/>
+                            <constraint firstItem="V1m-8K-k1x" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vvS-fv-uCz"/>
+                            <constraint firstAttribute="centerX" secondItem="f8Y-ds-obp" secondAttribute="centerX" id="y01-ym-OCd"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="button" destination="f8Y-ds-obp" id="T0J-V3-kBM"/>
+                        <outlet property="topLabel" destination="V1m-8K-k1x" id="5ol-ve-cij"/>
+                        <outlet property="webView" destination="a8g-1Q-Fqp" id="2UB-m4-Huu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
